@@ -1,0 +1,12 @@
+development:
+  password: ${MY_DEV_ENV_VAR}
+  theme_id: "my_theme_id"
+  store: mystore.myshopify.com
+  ignore_files:
+  - config/settings_data.json
+production:
+  password: ${MY_PROD_ENV_VAR}
+  theme_id: "my_theme_id"
+  store: mystore.myshopify.com
+  ignore_files:
+  - config/settings_data.json

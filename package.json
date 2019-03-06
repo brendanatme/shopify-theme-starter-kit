@@ -1,0 +1,27 @@
+{
+  "name": "shopify-theme-starter-kit",
+  "version": "1.0.0",
+  "description": "Barebones project for Shopify theme customization and deployment from existing themes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendanatme/shopify-theme-starter-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendanatme/shopify-theme-starter-kit/issues"
+  },
+  "homepage": "https://github.com/brendanatme/shopify-theme-starter-kit#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}

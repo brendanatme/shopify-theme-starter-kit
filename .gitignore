@@ -1,0 +1,5 @@
+# system
+.DS_Store
+
+# platform
+node_modules
