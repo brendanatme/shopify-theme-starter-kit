@@ -4,6 +4,7 @@ const minifyCSS = require('gulp-csso');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
+const jshint = require('gulp-jshint');
 
 const isDev = false;
 const SRC_DIR = 'src';
@@ -28,6 +29,8 @@ function css() {
 
 function js() {
   return src(JS_GLOB, { sourcemaps: isDev })
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
     .pipe(concat('custom.js'))
     .pipe(uglify())
     .pipe(dest(DEST_DIR, { sourcemaps: isDev }))
